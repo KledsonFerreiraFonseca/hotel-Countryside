@@ -14,33 +14,65 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-5">
         <div class="container">
-            <h1 class="navbar-brand">Hotel Countryside</h1>
+            <h1 class="navbar-brand m-0">Hotel Countryside</h1>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="" class="nav-link active">
+                            <i class="bi bi-building me-1"></i>
+                            Sobre o Hotel</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-signpost-2 me-1"></i>
+                            Estrutura</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-folder2-open me-1"></i>
+                            Reservas</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-chat-square-text me-1"></i>
+                            Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav nav-pills">
-                <li class="nav-item fw-bold">
-                    <a href="" class="nav-link active">
-                        <i class="bi bi-building me-1"></i>
-                        Sobre o Hotel</a>
-                </li>
-                <li class="nav-item fw-bold">
-                    <a href="" class="nav-link">
-                        <i class="bi bi-signpost-2 me-1"></i>
-                        Estrutura</a>
-                </li>
-                <li class="nav-item fw-bold">
-                    <a href="" class="nav-link">
-                        <i class="bi bi-folder2-open me-1"></i>
-                        Reservas</a>
-                </li>
-                <li class="nav-item fw-bold">
-                    <a href="" class="nav-link">
-                        <i class="bi bi-chat-square-text me-1"></i>
-                        Fale Conosco</a>
-                </li>
-            </ul>
-        </nav>
     </header>
+    <section id="sobre-o-hotel">
+        <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="./imagens/carousel/hotel-6862159_960_720.jpg" class="w-100" alt="fachada do hotel">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./imagens/carousel/horse-1804425_1280.jpg" class="w-100" alt="cavalo empinando">
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./imagens/carousel/nature-5411408_1280.jpg" class="w-100" alt="floresta de pinheiro e cachoeira">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0">
+                </button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1">
+                </button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2">
+                </button>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>

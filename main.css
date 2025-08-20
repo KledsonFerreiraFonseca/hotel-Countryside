@@ -18,3 +18,8 @@ body{
 .nav .nav-link{
     color:black
 }
+
+.navbar-toggler{
+    background-color: #fff;
+    
+}
