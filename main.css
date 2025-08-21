@@ -2,24 +2,36 @@ body{
     font-family: roboto, sans-serif;
 }
 
-.navbar-brand{
-    font-family: bungee, sans-serif;
-}
-
 .navbar{
     background-color: rgb(42, 161, 165);
 }
 
-.nav .nav-link.active{
+#cabecalho .nav .nav-link.active{
     background-color: #fff;
     color: black;
 }
 
-.nav .nav-link{
+#cabecalho .nav .nav-link{
     color:black
 }
 
 .navbar-toggler{
     background-color: #fff;
-    
+}
+
+.section-title{
+    font-family: bungee, sans-serif;
+}
+
+#sobre-o-hotel{
+    background-color: rgb(207, 207, 197);
+}
+
+.nav-entretenimento .nav-link.active{
+    background-color: rgb(42, 161, 165);
+    color: black;
+}
+
+.nav-entretenimento .nav-link{
+    color: black;
 }

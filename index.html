@@ -12,23 +12,28 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-5">
+    <header class="navbar navbar-expand-lg sticky-top p-5" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Hotel Countryside</h1>
+            <h1 class="navbar-brand m-0 section-title">Hotel Countryside</h1>
             <button class="navbar-toggler">
                 <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link active">
+                        <a href="#sobre-o-hotel" class="nav-link">
                             <i class="bi bi-building me-1"></i>
                             Sobre o Hotel</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link">
+                        <a href="#estrutura" class="nav-link">
                             <i class="bi bi-signpost-2 me-1"></i>
                             Estrutura</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#entretenimento" class="nav-link">
+                            <i class="bi bi-lightbulb"></i>
+                            Entretenimento</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a href="" class="nav-link">
@@ -44,11 +49,12 @@
             </nav>
         </div>
     </header>
-    <section id="sobre-o-hotel">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section id="sobre-o-hotel">
         <div class="carousel slide" id="carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="2500">
-                    <img src="./imagens/carousel/hotel-6862159_960_720.jpg" class="w-100" alt="fachada do hotel">
+                    <img src="./imagens/carousel/backyard-2549830_1280.jpg" class="w-100" alt="fachada do hotel">
                 </div>
                 <div class="carousel-item" data-bs-interval="2500">
                     <img src="./imagens/carousel/horse-1804425_1280.jpg" class="w-100" alt="cavalo empinando">
@@ -72,8 +78,117 @@
                 </button>
             </div>
         </div>
+        <div class="pt-4 pb-4" id="sobre-o-hotel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="w-100 rounded" src="./imagens/area comum/hotel-6862159_960_720.jpg" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title fs-3">Sobre o Hotel</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorum, hic ea, sint exercitationem dignissimos a laborum iusto, sequi inventore id quas qui ullam quaerat aperiam quia. Non, ad dolorem.
+                        </p>
+                        <h3 class="section-title fs-4">Promoções</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut aspernatur deleniti at est obcaecati quia ipsum doloremque illo, id unde illum voluptas dolorem ex voluptates cumque reiciendis! Doloribus, ducimus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-
+    <section id="estrutura" class="pt-4 pb-4 text-center" >
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title fs-3">Estrutura</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <img class="d-block w-100 rounded mb-2" src="./imagens/eventos/auditorium-86197_1280.jpg" alt="auditório">
+                    <h3 class="section-title fs-5">
+                        <i class="bi bi-people"></i>
+                        convenções</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quidem animi tenetur aperiam repellat, beatae maiores aut iste dolorem nesciunt esse! Nisi delectus, ab tempore labore perspiciatis autem. Facilis!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="d-block w-100 rounded mb-2" src="./imagens/eventos/tables-2704919_960_720.jpg" alt="salão de festa">
+                    <h3 class="section-title fs-5">
+                        <i class="bi bi-fork-knife"></i>
+                        Salão de Festa</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quidem animi tenetur aperiam repellat, beatae maiores aut iste dolorem nesciunt esse! Nisi delectus, ab tempore labore perspiciatis autem. Facilis!
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img class="d-block w-100 rounded mb-2" src="./imagens/lazer/trail-5726987_1280.jpg" alt="auditório">
+                    <h3 class="section-title fs-5">
+                        <i class="bi bi-cloud-sun"></i>
+                        Natureza</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ab, quidem animi tenetur aperiam repellat, beatae maiores aut iste dolorem nesciunt esse! Nisi delectus, ab tempore labore perspiciatis autem. Facilis!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="entretenimento">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Entretenimento</h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-entretenimento">
+                        <button class="nav-link active fw-bold text-start" data-bs-toggle="tab" data-bs-target="#restaurante" type="button">Restaurante</button>
+                        <button class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#lazer" type="button">Lazer</button>
+                        <button class="nav-link fw-bold text-start" data-bs-toggle="tab" data-bs-target="#passeio" type="button">Passeio</button>
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="restaurante">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/comida/food-1381817_1280.jpg" alt="bife">
+                                    <h5 class="fw-bold mt-2">Café da Manhã</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/comida/pizzeria-4918997_1280.jpg" alt="bife">
+                                    <h5 class="fw-bold mt-2">Almoço</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100"  src="./imagens/comida/food-1381817_1280.jpg" alt="bife">
+                                    <h5 class="fw-bold mt-2">Café da Tarde</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/comida/pizzeria-4918997_1280.jpg" alt="bife">
+                                    <h5 class="fw-bold mt-2">Janta</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
