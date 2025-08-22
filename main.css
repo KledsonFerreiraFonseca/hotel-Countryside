@@ -23,7 +23,7 @@ body{
     font-family: bungee, sans-serif;
 }
 
-#sobre-o-hotel{
+#sobre-o-hotel, #entretenimento{
     background-color: rgb(207, 207, 197);
 }
 
@@ -34,4 +34,13 @@ body{
 
 .nav-entretenimento .nav-link{
     color: black;
+}
+
+#entretenimento img{
+    height: 15em;
+    border-radius: 6px;
+}
+
+#carousel img{
+    max-height: 40em;
 }
