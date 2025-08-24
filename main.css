@@ -58,4 +58,14 @@ body{
     color: green 
 }
 
+/*TABLET*/
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    #entretenimento img{
+    height: 10em;
+    border-radius: 6px;
+    }
+
+}
+
+
 
