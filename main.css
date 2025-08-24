@@ -45,3 +45,17 @@ body{
     max-height: 40em;
 }
 
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a #instagram{
+    color: brown;
+}
+
+.social-links li a #whatsapp{
+    color: green 
+}
+
+
